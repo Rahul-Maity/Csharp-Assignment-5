@@ -6,7 +6,7 @@ public class BackgroundOperation
 {
     public async Task WriteToFileAsync(string message)
     {
-        await Task.Delay(3000); // Simulate a blocking operation
+        await Task.Delay(3000); 
 
         string filePath=Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "temp.txt");  
         Console.WriteLine(filePath);
